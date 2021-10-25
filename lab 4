@@ -1,0 +1,62 @@
+class queue:
+    def __init__(self):
+        self.element=[]
+    def enqueue(self,data):
+            return self.element.append(data)
+    def dequeue(self):
+            return self.element.pop(0)
+    def rear(self):
+            return self.element[-1]
+    def front(self):
+            return self.element[-1]
+    def isempty(self):
+              return (len(self.element)==0)
+    def length(self):
+              return len(self.element) 
+            
+            
+q = queue()
+q.enqueue(5)
+q.enqueue(4)
+#q.dequeue()
+#q.length()
+#q.rear()
+q.front()
+#q.isempty()
+q.dequeue()
+q.dequeue()
+//////////////////////////////////////////////////////////////////////////
+import numpy as np 
+class queue:
+ 
+    def __init__(self,size):
+      self.size=size
+      self.elements=np.ones([self,size], dtype='int 16')
+
+    def de_queue(self):
+      if self.isempty():
+        print("queue is empty")
+      else:
+          val=self.elements[self.front]
+          self.front=self.front+1
+    def en_queue(self,data):
+      if self.isfull():
+        print("queue is full")
+      else:
+          self.rear=self.rear+1
+          if self.front==-1:
+            self.front=self.front+1
+            return value
+    def isempty():
+           return((self.front==-1 or self.rear==-1)or (self.front>self.rear))
+
+    def isfull():
+          return(self.rear== self.size-1)   
+            
+          
+
+
+a.en_queue(6)
+a.en_queue(5)
+print(a.de_queue())
+print(a.de_queue())
